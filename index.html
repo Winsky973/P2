@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <script src="https://kit.fontawesome.com/78c12ea33f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style-tablette.css">
+    <link rel="stylesheet" href="./css/style-mobile.css">
+    <title>Booki copie</title>
+</head>
+
+<body>
+    <header class="page page-header">
+        <nav class="navigation-box">
+            <div class="navigation-img"><a href="#" class="navigation-logo">
+                    <img src="./images/logo/Booki@3x.png" alt="Logo du site Booki">
+                </a></div>
+            <ul class="navigation-liste">
+                <li>
+                    <a href="#">Hébergements</a>
+                </li>
+                <li>
+                    <a href="#">Activités</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page page-main">
+        <form action="formulaire" class="page-form-recherche">
+            <h1 class="formulaire-recherche-texte">Trouver votre hébergement pour des vacances de rêve</h1>
+            <p>En plein centre ville ou en pleine nature</p>
+            <div class="form-search">
+                <i class="fas fa-map-marker-alt"></i><label for="location"><input type="seach" id="maRecherche"
+                        name="search" placeholder="Marseille, France"></label>
+
+                <input type="submit" value="Rechercher">
+                <button type="submit" class="btn-submit-mobile"></button><i class="fas fa-search"></i>
+            </div>
+            <div class="form-filtres-container">
+                <p class="filtre-texte">
+                    Filtre
+                </p>
+                <div class="form-filtre-box">
+                    <span class="filtre-box filtre-box-1"><i
+                            class="fas fas-filtre fa-money-bill-wave"></i>Economique</span>
+                    <span class="filtre-box filtre-box-2"><i class="fas fas-filtre fa-child"></i> Familial </span>
+                    <span class="filtre-box filtre-box-3"><i class="fas fas-filtre fa-heart"></i>Romantique
+                    </span>
+                    <span class="filtre-box filtre-box-4"><i class="fas fas-filtre fa-dog"></i> Animaux autorisés
+                    </span>
+                </div>
+            </div>
+        </form>
+
+
+        <!--Section de la presentation des logements avec les étoiles d'appréciation utilisateur-->
+        <section class="main-container-logements">
+            <div class="container-gauche">
+                <h2>Hébergements à Marseilles</h2>
+                <div class="container-informations">
+                    <div class="box box1">
+                        <a href="#">
+                            <div class="box-image box-image-1">
+                            </div>
+                            <div class="box-informations">
+                                <h4>Auberge la cannebière</h4>
+                                <p>Nuit a partir de <strong>25€</strong></p>
+                                <div class="box-etoiles">
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-gris"><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box box2">
+                        <a href="#">
+                            <div class="box-image box-image-2"></div>
+                            <div class="box-informations">
+                                <h4>Hotêl du port</h4>
+                                <p>Nuit a partir de <strong>52€</strong></p>
+                                <div class="box-etoiles">
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box box3">
+                        <a href="#">
+                            <div class="box-image box-image-3"></div>
+                            <div class="box-informations">
+                                <h4>Hotêl le mouettes</h4>
+                                <p>Nuit a partir de <strong>76€</strong></p>
+                                <div class="box-etoiles">
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-gris"><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box box4">
+                        <a href="#">
+                            <div class="box-image box-image-4"></div>
+                            <div class="box-informations">
+                                <h4>Hotêl de la mer</h4>
+                                <p>Nuit a partir de <strong>46€</strong></p>
+                                <div class="box-etoiles">
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-gris"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-gris"><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box box5">
+                        <a href="#">
+                            <div class="box-image box-image-5"></div>
+                            <div class="box-informations">
+                                <h4>Auberge le panier</h4>
+                                <p>Nuit a partir de <strong>23€</strong></p>
+                                <div class="box-etoiles">
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-gris"><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box box6">
+                        <a href="#">
+                            <div class="box-image box-image-6"></div>
+                            <div class="box-informations">
+                                <h4>Hôtel chez anima</h4>
+                                <p>Nuit a partir de <strong>23€</strong></p>
+                                <div class="box-etoiles">
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                    <span class="etoile-gris"><i class="fas fa-star"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <h3><a href="#">Afficher plus</h3></a>
+            </div>
+
+            <aside class="container-droit">
+                <div class="lien-externe">
+                    <h2>Les plus populaires</h2>
+                    <a href="#"><span><i class="fas fa-chart-line"></i></span></a>
+                </div>
+                <div class="container-informations-aside">
+                    <div class="container-box">
+                        <a href="">
+                            <div class="box-aside box-aside-1">
+                                <div class="box-image-aside box-image-aside-1">
+                                </div>
+                                <div class="box-informations-aside">
+                                    <h4>Auberge la cannebière</h4>
+                                    <p>Nuit a partir de <strong>25€</strong></p>
+                                    <div class="box-etoiles-aside">
+                                        <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                        <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                        <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                        <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                        <span class="etoile-gris"><i class="fas fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!--Box 2-->
+                    <div class="container-box">
+                        <a href="">
+                            <div class="box-aside box-aside-2">
+                                <div class="box-image-aside box-image-aside-2">
+                                </div>
+                                <div class="box-informations-aside">
+                                    <h4>Auberge la cannebière</h4>
+                                    <p>Nuit a partir de <strong>25€</strong></p>
+                                    <div class="box-etoiles-aside">
+                                        <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                        <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                        <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                        <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                        <span class="etoile-gris"><i class="fas fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <!--Box 3-->
+                    <div class="container-box">
+                        <a href="">
+                            <div class="box-aside box-aside-3">
+                                <div class="box-image-aside box-image-aside-3">
+                                </div>
+                                <div class="box-informations-aside">
+                                    <h4>Auberge la cannebière</h4>
+                                    <p>Nuit a partir de <strong>25€</strong></p>
+                                    <div class="box-etoiles-aside">
+                                        <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                        <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                        <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                        <span class="etoile-bleue"><i class="fas fa-star"></i></span>
+                                        <span class="etoile-gris"><i class="fas fa-star"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </aside>
+
+        </section>
+
+    </main>
+
+    <footer class="page-footer">
+
+    </footer>
+</body>
+
+</html>
