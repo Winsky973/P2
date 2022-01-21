@@ -19,15 +19,17 @@
 <body>
     <header class="page page-header">
         <nav class="navigation-box">
-            <div class="navigation-img"><a href="#" class="navigation-logo">
+            <div class="navigation-img">
+                <a href="#" class="navigation-logo">
                     <img src="./images/logo/Booki@3x.png" alt="Logo du site Booki">
-                </a></div>
+                </a>
+            </div>
             <ul class="navigation-liste">
                 <li>
-                    <a href="#">Hébergements</a>
+                    <a href="#hébergements">Hébergements</a>
                 </li>
                 <li>
-                    <a href="#">Activités</a>
+                    <a href="#activites">Activités</a>
                 </li>
             </ul>
         </nav>
@@ -39,14 +41,15 @@
             <p>En plein centre ville ou en pleine nature</p>
             <div class="form-search">
                 <i class="fas fa-map-marker-alt"></i><label for="location"><input type="seach" id="maRecherche"
-                        name="search" placeholder="Marseille, France"></label>
-
-                <input type="submit" value="Rechercher">
-                <button type="submit" class="btn-submit-mobile"></button><i class="fas fa-search"></i>
+                        name="search" placeholder="Marseille, France" value="Marseille, France"></label>
+                <button value="Rechercher" type="submit" class="btn-submit-mobile">
+                    <span class="btn-recherche">Rechercher</span>
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
             <div class="form-filtres-container">
                 <p class="filtre-texte">
-                    Filtre
+                    Filtres
                 </p>
                 <div class="form-filtre-box">
                     <span class="filtre-box filtre-box-1"><i
@@ -58,13 +61,17 @@
                     </span>
                 </div>
             </div>
+            <div class="info-en-plus">
+                <i class="fas fa-info-circle"></i>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
         </form>
 
 
         <!--Section de la presentation des logements avec les étoiles d'appréciation utilisateur-->
-        <section class="main-container-logements">
+        <section id="hébergements" class="main-container-logements">
             <div class="container-gauche">
-                <h2>Hébergements à Marseilles</h2>
+                <h2>Hébergements à Marseille</h2>
                 <div class="container-informations">
                     <div class="box box1">
                         <a href="#">
@@ -214,8 +221,6 @@
                         </a>
                     </div>
 
-
-
                     <!--Box 3-->
                     <div class="container-box">
                         <a href="">
@@ -236,16 +241,88 @@
                             </div>
                         </a>
                     </div>
-
                 </div>
             </aside>
 
         </section>
 
+        <section id="activites" class="activites">
+            <h2>Activités à Marseille</h2>
+            <div class="container-activites-flex">
+                <div class="container-activites-informations informations informations-1">
+                    <div class="container-image container-image-1"></div>
+                    <div class="container-texte">
+                        <h3>Vieux port</h3>
+                    </div>
+                </div>
+
+                <div class="container-column informations-2">
+                    <div class="informations-column informations-2">
+                        <div class="container-image-column container-image-column-1"></div>
+                        <div class="container-texte-column">
+                            <h3>Vieux port</h3>
+                        </div>
+                    </div>
+                    <div class="container-activites-informations informations-column informations-3">
+                        <div class="container-image-column container-image-column-2"></div>
+                        <div class="container-texte-column">
+                            <h3>Vieux port</h3>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container-activites-informations informations informations-4">
+                    <div class="container-image container-image-2"></div>
+                    <div class="container-texte">
+                        <h3>Vieux port</h3>
+                    </div>
+                </div>
+                <div class="container-column informations-2">
+                    <div class="informations-column informations-2">
+                        <div class="container-image-column container-image-column-3"></div>
+                        <div class="container-texte-column">
+                            <h3>Vieux port</h3>
+                        </div>
+                    </div>
+                    <div class="container-activites-informations informations-column informations-3">
+                        <div class="container-image-column container-image-column-4"></div>
+                        <div class="container-texte-column">
+                            <h3>Vieux port</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <footer class="page-footer">
-
+        <div class="container-col-footer">
+            <div class="col-footer">
+                <h3><a href="#">A propos</a></h3>
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="#">Fonctionnement du site</a></li>
+                    <li class="footer-li"><a href="#">Conditions générales de vente</a></li>
+                    <li class="footer-li"><a href="#">Données et confidentialité</a></li>
+                </ul>
+            </div>
+            <div class="col-footer">
+                <h3><a href="#">Nos hébergements</a></h3>
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="#">Charte et qualité</a></li>
+                    <li class="footer-li"><a href="#">Soumettre votre hôtel</a></li>
+                </ul>
+            </div>
+            <div class="col-footer">
+                <h3><a href="#">Assistance</a></h3>
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="#">Centre d'aide</a></li>
+                    <li class="footer-li"><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
     </footer>
 </body>
 

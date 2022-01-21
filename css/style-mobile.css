@@ -1,385 +1,325 @@
-
-
-
 /*Dans cette partie nous nous occupons de la partie mobile en général*/
+
+
 /*Ici tout ce qui est inferieur a 768px sera affecter par les changement
 C'est le CSS pour les telephone mobile
 */
+
 @media only screen and (max-width: 767px) {
     /**Ici nous nous concentrons sur la  partie header en général 
     Avec une marge top, droit et gauche a 50px
     un display en inline flex
     avec une décoration overline et texte en bleue claire au survole des liens
     */
-    
-    .page-header{
+    .page-header {
         margin: 20px 0;
     }
-    
-    img{
+    img {
         max-width: 100%;
         height: auto;
     }
-    
-    .navigation-img{
+    .navigation-img {
         width: 30%;
         align-self: center;
         justify-content: center;
     }
-    
-        .navigation-box{
-            display: flex;
-            flex-direction: column;
-        }
-    
-        .navigation-logo{
-            justify-content: center;
-        }
-    
-    .navigation-liste{
-            padding: 0;
-            display: inline-flex;
-            justify-content: space-evenly;
+    .navigation-box {
+        display: flex;
+        flex-direction: column;
     }
-    
+    .navigation-logo {
+        justify-content: center;
+    }
+    .navigation-liste {
+        padding: 0;
+        display: inline-flex;
+        justify-content: space-evenly;
+    }
     /*Text décoration au survole des liens*/
-        .navigation-liste a:hover{
-            text-decoration: overline #0065FC;
-            color: #0065FC;
-        }
-
-
-        /*Ici nous traitons la partie principale du site web*/
-
-    .page{
-        margin: 0; 
+    .navigation-liste a:hover {
+        text-decoration: overline #0065FC;
+        color: #0065FC;
     }
-        
-    .page-main{
+    /*Ici nous traitons la partie principale du site web*/
+    .page {
+        margin: 0;
+    }
+    .page-main {
         font-weight: bold;
     }
-
-
-/*Ici nous traitons la partie formulaire dans son intégralité
+    /*Ici nous traitons la partie formulaire dans son intégralité
 Ici on traite la partie saisie de la partie recherche*/
-
-form{
-    margin: 20px;
-}
-
-form h1{
-    font-weight: bold;
-    font-size: 25px;
-}
-
-form p{
-    font-weight: 400;
-}
-
-.form-search{
-    display: flex;
-    align-content: center;
-
-}
-
-.fa-map-marker-alt{
-    position: relative;
-    border: solid 1px #F2F2F2;
-    background-color: #F2F2F2;
-    border-right: none;
-    padding: 10px;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-}
-
-input{
-    font-weight: bold;
-    color: black;
-    border: none;
-    border: solid 1px #F2F2F2;
-    padding: 9px;
-}
-
-input:focus { 
-    outline: none !important;
-    border-color: #719ECE;
-    border-left: none;
-}
-
-input[type=submit]{
-    visibility: hidden;
-}
-
-/*Dans cette partie la on gère la partie bouton submit de la recherche*/
-
-.fa-search{
-    visibility: visible;
-    position: relative;
-    bottom: -9px;
-    left: -147px;
-    color: white;
-}
-
-.btn-submit-mobile{
-    visibility: visible;
-    background: #0065FC;
-    position: relative;
-    bottom: 1px;
-    left: -120px;
-    padding: 20px;
-    border: none;
-    color: white;
-    cursor: grab;
-    border-radius: 15px;
-}
-
-
-/*On commence par designer les boites des filtres c'est a dire tous les span*/
-.form-filtres-container{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    margin-top: 30px;
-}
-
-
-.filtre-texte{
-    margin-top: 0px;
-    font-weight: bold;
-}
-.filtre-box{
-    margin: 40px 0;
-    padding: 10px 10px;
-    border: solid 1px #F2F2F2;
-    border-radius: 50px;
-    font-weight: bold;
-    cursor: grab;
-}
-
-.filtre-box:hover{
-    cursor: grab;
-    color: hsla(216, 100%, 49%, 0.377);
-}
-
-/*Ici on s'occupe des icons */
-.fas-filtre{
-    position: relative;
-    left: -10px;
-    border-radius: 50px;
-    padding: 11.5px;
-    background-color: #DEEBFF;
-    color: #0065FC;
-}
-
-
-/*Ici commence la partie présentation des logements*/
-
-/*On commence a definir les deux zones*/
-.main-container-logements{
-    display: flex;
-    flex-direction: column-reverse;
-}
-
-/*Conteneur gauche*/
-.container-gauche{
-    margin-top: 50px;
-    background-color: white;
-    border-radius: 30px;
-    width: 100%;
-}
-
-.container-gauche>h2{
-    margin-top: 50px;
-    margin-bottom: 10px;
-    padding-left: 20PX;
-}
-
-.container-gauche>h3{
-    padding-left: 30PX;
-    margin-bottom: 50px;
-}
-
-/*Ici on construit notre container des containers de logements*/
-.container-informations{
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 10px;
-}
-
-/*On design toute les boites qui contiendront les informations des logements*/
-.box{
-    flex: 1 1 100%;
-    margin: 10px;
-    height: 200px;
-    border-radius: 20px;
-    padding: 5px;
-    background-color: white;
-    box-shadow: 0px 5px 31px 5px rgba(0,0,0,0.2);   
-}
-
-/*Ici on design la partie imae de chaque boite*/
-.box-image{
-    height: 60%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-/*Ici on design les les containers d'informations des logements titre prix etc....*/
-.box-informations{
-    height: 80px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
-
-/*Ici on met toute les images*/
-.box-image-1{
-    background-image: url('../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.box-image-2{
-    background-image: url('../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.box-image-3{
-    background-image: url('../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.box-image-4{
-    background-image: url('../images/hebergements//3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.box-image-5{
-    background-image: url('../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.box-image-6{
-    background-image: url('../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-/*Ici on s'occupe de la partie texte des logements titre prix nombre d'étoiles*/
-.box-informations{
-    padding: 0 15px;
-}
-
-.box-informations>h4
-{
-    margin: 0;
-    margin: 10px 0 5px 0;
-}
-
-.box-informations>p{
-    margin: 0;
-}
-
-/*Ici on design la partie etoiles*/
-.box-etoiles{
-    font-size: 12px;
-    margin-top: 3px;
-}
-
-.etoile-bleue{
-    color: #0065FC;
-}
-
-.etoile-gris{
-    color: #d1d1d1;
-}
-
-
-
-/*Partie droite des logements Conteneur droit (l'aside)*/
-.container-droit{
-    margin-top: 50px;
-    background-color: #F2F2F2;
-    padding: 0 20px;
-    border-radius: 30px;
-}
-
-.lien-externe{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 30px;
-}
-
-.lien-externe>h2{
-    margin: 0;
-}
-
-
-/*Ici on commence a construire la boite qui contiendra les informations textes et images*/
-.box-aside{
-    display: flex;
-    margin-bottom: 30px;
-    height: 145px;
-    border-radius: 30px;
-    padding: 5px;
-    background-color: white;
-    box-shadow: 0px 5px 31px 5px rgba(0,0,0,0.2);   
-}
-
-/*Ici on construit la boite qui contiendra les images*/
-.box-image-aside{
-    width: 30%;
-    height: 100%;
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
-}
-
-/*Ici on place toutes les images*/
-
-.box-image-aside-1{
-    background-image: url('../images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.box-image-aside-2{
-    background-image: url('../images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.box-image-aside-3{
-    background-image: url('../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.box-informations-aside{
-    width: 70%;
-    height: 100%;
-    border-top-right-radius: 30px; 
-    border-bottom-right-radius: 30px; 
-    padding: 0 30px;
-}
-
-.box-informations-aside>h4{
-    margin-bottom: 0;
-}
-
-.box-informations-aside>p{
-    margin-top: 5px;
-}
-
-.box-etoiles-aside{
-    display: flex;
-    align-items: flex-end;
-}
-
-
+    form {
+        margin: 20px;
+    }
+    form h1 {
+        font-weight: bold;
+        font-size: 25px;
+    }
+    form p {
+        font-weight: 400;
+    }
+    .form-search {
+        display: flex;
+        align-content: center;
+    }
+    .fa-map-marker-alt {
+        position: relative;
+        border: solid 1px #F2F2F2;
+        background-color: #F2F2F2;
+        border-right: none;
+        padding: 10px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    input {
+        font-weight: bold;
+        color: black;
+        border: none;
+        border: solid 1px #F2F2F2;
+        padding: 9px;
+    }
+    input:focus {
+        outline: none !important;
+        border-color: #719ECE;
+        border-left: none;
+    }
+    input[type=submit] {
+        visibility: hidden;
+    }
+    /*Dans cette partie la on gère la partie bouton submit de la recherche*/
+    .btn-submit-mobile {
+        background: #0065FC;
+        border-radius: 15px;
+        display: inline-block;
+        border: none;
+        padding: 10px;
+        padding: 0 15px;
+        color: white;
+        cursor: pointer;
+        position: relative;
+        left: -10px;
+    }
+    .fa-search {
+        color: white;
+    }
+    .btn-recherche {
+        display: none;
+        background: #0065FC;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+    /*On commence par designer les boites des filtres c'est a dire tous les span*/
+    .form-filtres-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+    .filtre-texte {
+        margin-top: 0px;
+        font-weight: bold;
+    }
+    .filtre-box {
+        margin: 40px 0;
+        padding: 10px 10px;
+        border: solid 1px #F2F2F2;
+        border-radius: 50px;
+        font-weight: bold;
+        cursor: grab;
+    }
+    .filtre-box:hover {
+        cursor: grab;
+        color: hsla(216, 100%, 49%, 0.377);
+    }
+    /*Ici on s'occupe des icons */
+    .fas-filtre {
+        position: relative;
+        left: -10px;
+        border-radius: 50px;
+        padding: 11.5px;
+        background-color: #DEEBFF;
+        color: #0065FC;
+    }
+    /*Ici ce sont les infos en plus*/
+    .info-en-plus {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .fa-info-circle {
+        margin-right: 10px;
+        color: #0065FC;
+    }
+    /*Ici commence la partie présentation des logements*/
+    /*On commence a definir les deux zones*/
+    .main-container-logements {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    /*Conteneur gauche*/
+    .container-gauche {
+        margin-top: 50px;
+        background-color: white;
+        border-radius: 30px;
+        width: 100%;
+    }
+    .container-gauche>h2 {
+        margin-top: 50px;
+        margin-bottom: 10px;
+        padding-left: 20PX;
+    }
+    .container-gauche>h3 {
+        padding-left: 30PX;
+        margin-bottom: 50px;
+    }
+    /*Ici on construit notre container des containers de logements*/
+    .container-informations {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 10px;
+    }
+    /*On design toute les boites qui contiendront les informations des logements*/
+    .box {
+        flex: 1 1 100%;
+        margin: 10px;
+        height: 200px;
+        border-radius: 20px;
+        padding: 5px;
+        background-color: white;
+        box-shadow: 0px 5px 31px 5px rgba(0, 0, 0, 0.2);
+    }
+    /*Ici on design la partie imae de chaque boite*/
+    .box-image {
+        height: 60%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+    /*Ici on design les les containers d'informations des logements titre prix etc....*/
+    .box-informations {
+        height: 80px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    /*Ici on met toute les images*/
+    .box-image-1 {
+        background-image: url('../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .box-image-2 {
+        background-image: url('../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .box-image-3 {
+        background-image: url('../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .box-image-4 {
+        background-image: url('../images/hebergements//3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .box-image-5 {
+        background-image: url('../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .box-image-6 {
+        background-image: url('../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    /*Ici on s'occupe de la partie texte des logements titre prix nombre d'étoiles*/
+    .box-informations {
+        padding: 0 15px;
+    }
+    .box-informations>h4 {
+        margin: 0;
+        margin: 10px 0 5px 0;
+    }
+    .box-informations>p {
+        margin: 0;
+    }
+    /*Ici on design la partie etoiles*/
+    .box-etoiles {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    .etoile-bleue {
+        color: #0065FC;
+    }
+    .etoile-gris {
+        color: #d1d1d1;
+    }
+    /*Partie droite des logements Conteneur droit (l'aside)*/
+    .container-droit {
+        margin-top: 20px;
+        background-color: #F2F2F2;
+        padding: 0 20px;
+        border-radius: 30px;
+    }
+    .lien-externe {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+    .lien-externe>h2 {
+        margin: 0;
+    }
+    /*Ici on commence a construire la boite qui contiendra les informations textes et images*/
+    .box-aside {
+        display: flex;
+        margin-bottom: 30px;
+        height: 145px;
+        border-radius: 30px;
+        padding: 5px;
+        background-color: white;
+        box-shadow: 0px 5px 31px 5px rgba(0, 0, 0, 0.2);
+    }
+    /*Ici on construit la boite qui contiendra les images*/
+    .box-image-aside {
+        width: 30%;
+        height: 100%;
+        border-bottom-left-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+    /*Ici on place toutes les images*/
+    .box-image-aside-1 {
+        background-image: url('../images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .box-image-aside-2 {
+        background-image: url('../images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .box-image-aside-3 {
+        background-image: url('../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .box-informations-aside {
+        width: 70%;
+        height: 100%;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding: 0 30px;
+    }
+    .box-informations-aside>h4 {
+        margin-bottom: 0;
+    }
+    .box-informations-aside>p {
+        margin-top: 5px;
+    }
+    .box-etoiles-aside {
+        display: flex;
+        align-items: flex-end;
+    }
 }
