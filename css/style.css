@@ -354,9 +354,6 @@ avec une décoration overline et texte en bleue claire au survole des liens
         height: 600px;
         min-height: 0;
         display: flex;
-        justify-content: start;
-        align-content: stretch;
-        align-items: stretch;
         flex-flow: column wrap;
         column-gap: 40px;
     }
@@ -364,12 +361,18 @@ avec une décoration overline et texte en bleue claire au survole des liens
         border-radius: 30px;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     }
+    .container-activites-informations>a {
+        color: black;
+    }
     .container-activites-informations-column {
         border: solid 1px black;
     }
     .informations-column {
         border-radius: 30px;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    }
+    .informations-column>a {
+        color: black;
     }
     .informations-1 {
         flex: 1 1 100%;
@@ -415,6 +418,9 @@ avec une décoration overline et texte en bleue claire au survole des liens
         padding-left: 20px;
         align-content: center;
         border-radius: 0 0 30px 30px;
+    }
+    .container-texte>h4 {
+        align-content: center;
     }
     /**
     *Ici nous mettrons les images dansles containers
