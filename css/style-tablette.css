@@ -4,7 +4,7 @@ un display en inline flex
 avec une décoration overline et texte en bleue claire au survole des liens
 */
 
-@media only screen and (max-width: 820px) {
+@media (min-width: 481px) and (max-width: 768px) {
     .page-header {
         margin: 20px 20px 0;
     }
@@ -261,7 +261,7 @@ avec une décoration overline et texte en bleue claire au survole des liens
         flex: 40%;
     }
     .informations-4 {
-        flex: 1 1 90%;
+        flex: 1 1 100%;
     }
     .informations-5 {
         flex: 1 1 50%;
