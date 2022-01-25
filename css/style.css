@@ -87,7 +87,7 @@ avec une décoration overline et texte en bleue claire au survole des liens
         border: solid 1px #F2F2F2;
         background-color: #F2F2F2;
         border-right: none;
-        padding: 11.5px 20px;
+        padding: 12px 20px;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
     }
@@ -97,7 +97,7 @@ avec une décoration overline et texte en bleue claire au survole des liens
         color: black;
         border: none;
         border: solid 1px #F2F2F2;
-        padding: 10px;
+        padding: 11px 10px 10px;
     }
     input:focus {
         outline: none !important;
@@ -111,11 +111,11 @@ avec une décoration overline et texte en bleue claire au survole des liens
         border-bottom-right-radius: 15px;
         display: inline-block;
         border: none;
-        padding: 10px;
+        padding: 12px 10px 11px;
+        left: -4px;
         color: white;
         cursor: pointer;
         position: relative;
-        left: -10px;
     }
     .fa-search {
         display: none;
