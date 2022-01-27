@@ -5,7 +5,7 @@
 C'est le CSS pour les telephone mobile
 */
 
-@media only screen and (max-width: 480px) {
+@media (max-width: 768px) {
     /**Ici nous nous concentrons sur la  partie header en général 
     Avec une marge top, droit et gauche a 50px
     un display en inline flex

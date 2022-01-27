@@ -4,7 +4,7 @@ un display en inline flex
 avec une décoration overline et texte en bleue claire au survole des liens
 */
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 769px) and (max-width: 992px) {
     .page-header {
         margin: 20px 20px 0;
     }
