@@ -21,6 +21,8 @@
     img {
         min-height: 100%;
         max-width: 100%;
+        object-fit: cover;
+        object-position: center;
     }
     /**Ici nous nous concentrons sur la  partie header en général 
 Avec une marge top, droit et gauche a 50px
@@ -258,42 +260,6 @@ avec une décoration overline et texte en bleue claire au survole des liens
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
     }
-    /*Ici on design les les containers d'informations des logements titre prix etc....*/
-    /*Ici on met toute les images*/
-    
-    .box-image-1 {
-        object-fit: cover;
-        object-position: center;
-    }
-    
-    .box-image-2 {
-        object-fit: cover;
-        object-position: center;
-    }
-    
-    .box-image-3 {
-        background-image: url('../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .box-image-4 {
-        background-image: url('../images/hebergements//3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .box-image-5 {
-        background-image: url('../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-    
-    .box-image-6 {
-        background-image: url('../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    }
     /*Ici on s'occupe de la partie texte des logements titre prix nombre d'étoiles*/
     
     .box-informations {
@@ -368,27 +334,25 @@ avec une décoration overline et texte en bleue claire au survole des liens
     .box-image-aside {
         width: 30%;
         height: 100%;
-        border-bottom-left-radius: 30px;
-        border-top-left-radius: 30px;
     }
     /*Ici on place toutes les images*/
     
     .box-image-aside-1 {
-        background-image: url('../images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 30px 0 0 30px;
     }
     
     .box-image-aside-2 {
-        background-image: url('../images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 30px 0 0 30px;
     }
     
     .box-image-aside-3 {
-        background-image: url('../images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 30px 0 0 30px;
     }
     
     .box-informations-aside {
@@ -433,16 +397,23 @@ avec une décoration overline et texte en bleue claire au survole des liens
         color: black;
     }
     
-    .informations-column {
-        border-radius: 30px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+    .box-image-activités {
+        width: 100%;
+        height: 80%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
     
     .container-column {
         flex: 1;
         display: flex;
         flex-direction: column;
-        row-gap: 20px;
+        justify-content: space-between;
+    }
+    
+    .informations-column {
+        border-radius: 30px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     }
     
     .informations-column>a {
@@ -455,12 +426,11 @@ avec une décoration overline et texte en bleue claire au survole des liens
     }
     
     .informations-2 {
-        /*width: 23%;*/
-        flex: 50%;
+        height: 50%;
     }
     
     .informations-3 {
-        flex: 1 1 50%;
+        height: 40%;
     }
     
     .informations-4 {
@@ -468,13 +438,11 @@ avec une décoration overline et texte en bleue claire au survole des liens
     }
     
     .informations-5 {
-        /*width: 23%;*/
-        flex: 50%;
+        height: 40%;
     }
     
     .informations-6 {
-        /*width: 23%;*/
-        flex: 50%;
+        height: 50%;
     }
     /*Container images et textes**/
     
@@ -499,48 +467,6 @@ avec une décoration overline et texte en bleue claire au survole des liens
         border-radius: 0 0 30px 30px;
     }
     /**
-    *Ici nous mettrons les images dansles containers
-    **/
-    
-    .container-image-1 {
-        background-image: url('../images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg');
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .container-image-2 {
-        background-image: url('../images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg');
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .container-image-column-1 {
-        background-image: url('../images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg');
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .container-image-column-2 {
-        background-image: url('../images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg');
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .container-image-column-3 {
-        background-image: url('../images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg');
-        background-position: center;
-        background-size: cover;
-    }
-    
-    .container-image-column-4 {
-        background-image: url('../images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg');
-        background-position: center;
-        background-size: cover;
-    }
-    /***
-    *
-    *
-    ***/
     /*Ici on s'occupe de la partie footer de la page*/
     
     .page-footer {
