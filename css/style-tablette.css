@@ -280,16 +280,17 @@ img {
         margin-bottom: 50px;
     }
     .container-activites-flex {
-        height: 600px;
+        height: auto;
         display: flex;
+        flex-wrap: wrap;
     }
     .container-activites-informations {
         border-radius: 30px;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-        margin: 0 20px;
     }
     .container-activites-informations>a {
         color: black;
+        margin: 0;
     }
     .box-image-activités {
         width: 100%;
@@ -311,23 +312,27 @@ img {
         color: black;
     }
     .informations-1 {
-        margin-left: 0;
-        width: 23%;
+        width: 50%;
+        height: 550px;
     }
     .informations-2 {
-        height: 50%;
+        height: 260PX;
     }
     .informations-3 {
-        height: 40%;
+        height: 260PX;
     }
     .informations-4 {
-        width: 23%;
+        width: 50%;
+        height: 550px;
+        margin-top: 30px;
+        margin-left: 0;
     }
     .informations-5 {
-        height: 40%;
+        height: 260PX;
+        margin-top: 30px;
     }
     .informations-6 {
-        height: 50%;
+        height: 260PX;
     }
     /*Container images et textes**/
     .container-image {

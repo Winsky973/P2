@@ -451,15 +451,14 @@ avec une décoration overline et texte en bleue claire au survole des liens
         border-radius: 30px 30px 0 0;
     }
     
-    .container-image-column {
-        height: 80%;
-        border-radius: 30px 30px 0 0;
-    }
-    
     .container-texte-column {
         padding-left: 20px;
         align-content: center;
         border-radius: 0 0 30px 30px;
+    }
+    
+    .box-image-activités-1 {
+        height: 75%;
     }
     
     .container-texte {
@@ -531,9 +530,9 @@ avec une décoration overline et texte en bleue claire au survole des liens
         }
     }
     
-    @media (min-width: 1700px) {
+    @media (min-width: 1899px) {
         .box {
-            flex: 1 0 300px;
+            flex: 1 0 380px;
             margin: 10px;
             height: 200px;
             border-radius: 20px;
