@@ -45,21 +45,30 @@ a {
         color: black;
     }
     /*Text décoration au survole des liens*/
-    .navigation-liste a:hover {
-        text-decoration: overline #0065FC;
+    .navigation-liste li:nth-of-type(1) a {
+        border-top: solid 2px #0065FC;
+        padding-top: 33px;
         color: #0065FC;
+    }
+    /*Text décoration au survole des liens*/
+    .navigation-liste a:hover {
+        border-top: none;
+        ;
     }
     /*Ici nous traitons la partie principale du site web*/
     .page-main {
-        margin: 50px 50px;
+        margin: 0px 10px;
     }
     /*Ici nous traitons la partie formulaire dans son intégralité
 */
     /*Ici on traite la partie saisie de la partie recherche*/
-    form h1 {
+    .page-form-recherche {
+        width: 80%;
+    }
+    .page-form-recherche h1 {
         font-weight: bold;
     }
-    form p {
+    .page-form-recherche p {
         font-weight: 400;
     }
     .fa-map-marker-alt {
@@ -96,28 +105,15 @@ a {
     }
     /*On commence par designer les boites des filtres c'est a dire tous les span*/
     .form-filtres-container {
-        display: inline-flex;
+        display: flex;
         align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-    }
-    .filtre-texte {
-        margin-top: 40px;
-        font-weight: bold;
     }
     .filtre-box {
-        margin-right: 20px;
-        padding: 10px 10px;
-        border: solid 1px #F2F2F2;
-        border-radius: 50px;
-        font-weight: bold;
+        margin-right: 10px;
     }
     .filtre-box:hover {
         cursor: grab;
         color: hsla(216, 100%, 49%, 0.377);
-    }
-    .filtre-box-1 {
-        margin-left: 20px;
     }
     /*Ici on s'occupe des icons on */
     .fas-filtre {
@@ -133,6 +129,7 @@ a {
     .main-container-logements {
         display: flex;
         flex-direction: column-reverse;
+        margin: 0;
     }
     /*Conteneur gauche*/
     .container-gauche {

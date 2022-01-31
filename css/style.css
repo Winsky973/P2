@@ -62,14 +62,15 @@ avec une décoration overline et texte en bleue claire au survole des liens
     }
     
     .navigation-liste li:nth-of-type(1) a {
-        border-top: solid 1px #0065FC;
-        padding-top: 45px;
+        border-top: solid 2px #0065FC;
+        padding-top: 33px;
+        color: #0065FC;
     }
     /*Text décoration au survole des liens*/
     
     .navigation-liste a:hover {
-        border-top: solid 1px #0065FC;
-        padding-top: 45px;
+        border-top: solid 2px #0065FC;
+        padding-top: 33px;
         color: #0065FC;
     }
     /*Ici nous traitons la partie principale du site web*/
@@ -83,7 +84,7 @@ avec une décoration overline et texte en bleue claire au survole des liens
     
     .page-form-recherche {
         padding: 10px;
-        width: 70%;
+        width: 75%;
     }
     
     form h1 {
@@ -112,7 +113,7 @@ avec une décoration overline et texte en bleue claire au survole des liens
         padding: 11px 10px 10px;
     }
     
-    input:focus {
+    input[type=search]:focus {
         outline: none !important;
         border-color: #719ECE;
     }
@@ -149,6 +150,7 @@ avec une décoration overline et texte en bleue claire au survole des liens
     
     .filtre-texte {
         font-weight: bold;
+        color: black;
     }
     
     .filtre-box {
@@ -156,21 +158,29 @@ avec une décoration overline et texte en bleue claire au survole des liens
         border-radius: 50px;
         font-weight: bold;
         padding-right: 1%;
-        margin-top: 10px;
+    }
+    
+    .fas-filtre {
+        padding: 12px;
+        border-radius: 50px;
+        background-color: #DEEBFF;
+        color: #0065FC;
+    }
+    
+    .filtre-box-2 i {
+        width: 40px;
     }
     
     .filtre-box:hover {
         cursor: pointer;
         color: hsla(216, 100%, 49%, 0.377);
     }
-    /*Ici on s'occupe des icons */
     
-    .fas-filtre {
-        padding: 12px;
-        border-radius: 50%;
-        background-color: #DEEBFF;
-        color: #0065FC;
+    .filtre-box:hover i {
+        cursor: pointer;
+        color: hsla(216, 100%, 49%, 0.377);
     }
+    /*Ici on s'occupe des icons */
     /*Ici ce sont les infos en plus*/
     
     .info-en-plus {
@@ -483,6 +493,10 @@ avec une décoration overline et texte en bleue claire au survole des liens
     }
     
     @media (min-width: 1246px) {
+        .page-form-recherche {
+            padding: 10px;
+            width: 70%;
+        }
         .box {
             flex: 1 0 240px;
             margin: 10px;
@@ -495,6 +509,10 @@ avec une décoration overline et texte en bleue claire au survole des liens
     }
     
     @media (min-width: 1277px) {
+        .page-form-recherche {
+            padding: 10px;
+            width: 60%;
+        }
         .box {
             flex: 1 0 250px;
             margin: 10px;
