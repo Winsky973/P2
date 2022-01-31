@@ -18,27 +18,43 @@ C'est le CSS pour les telephone mobile
         max-width: 100%;
         height: auto;
     }
-    .navigation-img {
-        width: 30%;
-        align-self: center;
+    .navigation-img img {
         justify-content: center;
+        width: 70%
     }
     .navigation-box {
         display: flex;
         flex-direction: column;
     }
     .navigation-logo {
+        display: flex;
         justify-content: center;
     }
     .navigation-liste {
         padding: 0;
-        display: inline-flex;
+        gap: 0;
+        display: flex;
         justify-content: space-evenly;
+        width: 100%;
+        margin-top: 10px;
     }
-    /*Text décoration au survole des liens*/
-    .navigation-liste a:hover {
-        text-decoration: overline #0065FC;
+    .navigation-liste li {
+        padding-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+    .navigation-liste li:nth-of-type(1) a {
+        border-top: none;
+        padding: 0;
         color: #0065FC;
+    }
+    .navigation-liste li:nth-of-type(1) {
+        border-top: none;
+        border-bottom: solid 3px #0065FC;
+    }
+    .navigation-liste li:nth-of-type(2) {
+        border-top: none;
+        border-bottom: solid 3px #F2F2F2;
     }
     /*Ici nous traitons la partie principale du site web*/
     .page {
@@ -46,31 +62,30 @@ C'est le CSS pour les telephone mobile
     }
     .page-main {
         font-weight: bold;
+        margin-top: 20px;
     }
     /*Ici nous traitons la partie formulaire dans son intégralité
 Ici on traite la partie saisie de la partie recherche*/
+    .page-form-recherche {
+        padding: none;
+        margin-top: 0;
+        width: 85%;
+    }
     form {
         margin: 20px;
     }
     form h1 {
         font-weight: bold;
-        font-size: 25px;
+        font-size: 20px;
+        margin: 0;
     }
     form p {
         font-weight: 400;
+        margin: 10px 0 20px 0;
     }
     .form-search {
         display: flex;
         align-content: center;
-    }
-    .fa-map-marker-alt {
-        position: relative;
-        border: solid 1px #F2F2F2;
-        background-color: #F2F2F2;
-        border-right: none;
-        padding: 10px;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
     }
     input {
         font-weight: bold;
@@ -91,16 +106,11 @@ Ici on traite la partie saisie de la partie recherche*/
     .btn-submit-mobile {
         background: #0065FC;
         border-radius: 15px;
-        display: inline-block;
-        border: none;
-        padding: 10px;
         padding: 0 15px;
-        color: white;
-        cursor: pointer;
-        position: relative;
-        left: -10px;
+        margin-left: -10px;
     }
     .fa-search {
+        display: block;
         color: white;
     }
     .btn-recherche {
@@ -113,34 +123,32 @@ Ici on traite la partie saisie de la partie recherche*/
     .form-filtres-container {
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-start;
-        margin-top: 30px;
+        align-items: flex-start;
+        margin-top: 20px;
     }
     .filtre-texte {
-        margin-top: 0px;
         font-weight: bold;
+        width: 100%;
     }
-    .filtre-box {
-        margin: 40px 0;
-        padding: 10px 10px;
-        border: solid 1px #F2F2F2;
-        border-radius: 50px;
+    .filtre-texte {
         font-weight: bold;
-        cursor: grab;
+        width: 100%;
+        margin-bottom: 5px;
     }
     .filtre-box:hover {
         cursor: grab;
         color: hsla(216, 100%, 49%, 0.377);
     }
     /*Ici on s'occupe des icons */
-    .fas-filtre {
-        position: relative;
-        left: -10px;
+    .filtre-box {
+        border: solid 1px #F2F2F2;
         border-radius: 50px;
-        padding: 11.5px;
-        background-color: #DEEBFF;
-        color: #0065FC;
+        font-weight: bold;
+        padding-right: 5%;
+        margin-top: 10px;
+    }
+    .fas-filtre {
+        border-radius: 50px;
     }
     /*Ici ce sont les infos en plus*/
     .info-en-plus {
@@ -157,28 +165,29 @@ Ici on traite la partie saisie de la partie recherche*/
     .main-container-logements {
         display: flex;
         flex-direction: column-reverse;
+        margin-top: 10px;
     }
     /*Conteneur gauche*/
     .container-gauche {
-        margin-top: 50px;
         background-color: white;
         border-radius: 30px;
         width: 100%;
     }
     .container-gauche>h2 {
+        padding: 0;
+        margin-left: 30px;
         margin-top: 50px;
         margin-bottom: 10px;
-        padding-left: 20PX;
     }
     .container-gauche>h3 {
-        padding-left: 20PX;
         margin-bottom: 50px;
     }
     /*Ici on construit notre container des containers de logements*/
     .container-informations {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 10px;
+        padding: 0;
+        margin: 0 20px;
     }
     h3 a {
         color: black;
@@ -263,10 +272,9 @@ Ici on traite la partie saisie de la partie recherche*/
     }
     /*Partie droite des logements Conteneur droit (l'aside)*/
     .container-droit {
-        margin-top: 20px;
         background-color: #F2F2F2;
-        padding: 0 20px;
-        border-radius: 30px;
+        margin: 0;
+        border-radius: 0;
     }
     .lien-externe {
         display: flex;
@@ -332,20 +340,36 @@ Ici on traite la partie saisie de la partie recherche*/
         align-items: flex-end;
     }
     /*Ici on s'occupe de toute la partie activités à marseille*/
+    .activites {
+        margin: 0 30px;
+    }
     .container-activites-flex {
         flex-direction: column;
         height: auto;
     }
+    .container-texte h4 {
+        margin: 0;
+        margin-top: 2%;
+    }
     .container-activites-informations {
         width: 100%;
-        height: 250px;
+        height: 200px;
         margin: 0;
         margin: 30px 0;
     }
     .box-image-activités {
-        height: 200px;
+        height: 140px;
     }
-    .container-image {}
+    .informations-3 {
+        margin: 30px 0 0 0;
+    }
+    .informations-6 {
+        margin: 30px 0 30px 0;
+    }
+    .container-image {
+        height: 80%;
+        border-radius: 30px 30px 0 0;
+    }
     /***
     *
     *

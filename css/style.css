@@ -61,14 +61,9 @@ avec une décoration overline et texte en bleue claire au survole des liens
         color: black;
     }
     
-    .navigation-liste li:nth-of-type(1) {
-        color: red;
-    }
-    
     .navigation-liste li:nth-of-type(1) a {
         border-top: solid 1px #0065FC;
         padding-top: 45px;
-        color: #0065FC;
     }
     /*Text décoration au survole des liens*/
     
@@ -88,6 +83,7 @@ avec une décoration overline et texte en bleue claire au survole des liens
     
     .page-form-recherche {
         padding: 10px;
+        width: 70%;
     }
     
     form h1 {
@@ -108,7 +104,7 @@ avec une décoration overline et texte en bleue claire au survole des liens
     }
     /*Ici on design la partie recherche e la page*/
     
-    input {
+    input[type=search] {
         font-weight: bold;
         color: black;
         border: none;
@@ -119,7 +115,6 @@ avec une décoration overline et texte en bleue claire au survole des liens
     input:focus {
         outline: none !important;
         border-color: #719ECE;
-        border-left: none;
     }
     /*Ici on design le bouton de recherche*/
     
@@ -127,13 +122,9 @@ avec une décoration overline et texte en bleue claire au survole des liens
         background: #0065FC;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        display: inline-block;
         border: none;
         padding: 12px 10px 11px;
-        left: -4px;
         color: white;
-        cursor: pointer;
-        position: relative;
     }
     
     .fa-search {
@@ -152,21 +143,20 @@ avec une décoration overline et texte en bleue claire au survole des liens
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
         margin-top: 30px;
     }
     
     .filtre-texte {
         font-weight: bold;
-        margin-right: 30px;
     }
     
     .filtre-box {
-        margin-right: 20px;
-        padding: 10px 10px;
         border: solid 1px #F2F2F2;
         border-radius: 50px;
         font-weight: bold;
+        padding-right: 1%;
+        margin-top: 10px;
     }
     
     .filtre-box:hover {
@@ -176,10 +166,8 @@ avec une décoration overline et texte en bleue claire au survole des liens
     /*Ici on s'occupe des icons */
     
     .fas-filtre {
-        position: relative;
-        left: -10px;
-        border-radius: 50px;
-        padding: 11.5px;
+        padding: 12px;
+        border-radius: 50%;
         background-color: #DEEBFF;
         color: #0065FC;
     }
