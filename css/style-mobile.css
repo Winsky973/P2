@@ -61,7 +61,6 @@ C'est le CSS pour les telephone mobile
         margin: 0;
     }
     .page-main {
-        font-weight: bold;
         margin-top: 20px;
     }
     /*Ici nous traitons la partie formulaire dans son intégralité
@@ -208,45 +207,12 @@ Ici on traite la partie saisie de la partie recherche*/
     /*Ici on design la partie imae de chaque boite*/
     .box-image {
         height: 60%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
     }
     /*Ici on design les les containers d'informations des logements titre prix etc....*/
     .box-informations {
         height: 80px;
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
-    }
-    /*Ici on met toute les images*/
-    .box-image-1 {
-        background-image: url('../images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-    .box-image-2 {
-        background-image: url('../images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-    .box-image-3 {
-        background-image: url('../images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-    .box-image-4 {
-        background-image: url('../images/hebergements//3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-    .box-image-5 {
-        background-image: url('../images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-    .box-image-6 {
-        background-image: url('../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
     }
     /*Ici on s'occupe de la partie texte des logements titre prix nombre d'étoiles*/
     .box-informations {
@@ -287,15 +253,6 @@ Ici on traite la partie saisie de la partie recherche*/
         margin: 0;
     }
     /*Ici on commence a construire la boite qui contiendra les informations textes et images*/
-    .box-aside {
-        display: flex;
-        margin-bottom: 30px;
-        height: 145px;
-        border-radius: 30px;
-        padding: 5px;
-        background-color: white;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-    }
     .container-box a {
         color: black;
     }
@@ -307,21 +264,6 @@ Ici on traite la partie saisie de la partie recherche*/
         border-top-left-radius: 30px;
     }
     /*Ici on place toutes les images*/
-    .box-image-aside-1 {
-        background-image: url('../images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-    .box-image-aside-2 {
-        background-image: url('../images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    }
-    .box-image-aside-3 {
-        background-image: url('../images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg');
-        background-size: cover;
-        background-position: center;
-    }
     .box-informations-aside {
         width: 70%;
         height: 100%;
