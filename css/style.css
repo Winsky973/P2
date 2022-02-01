@@ -462,8 +462,9 @@ avec une décoration overline et texte en bleue claire au survole des liens
     
     .container-texte-column {
         padding-left: 20px;
-        align-content: center;
-        border-radius: 0 0 30px 30px;
+        display: flex;
+        height: 20%;
+        align-items: center;
     }
     
     .box-image-activités-1 {
@@ -473,6 +474,9 @@ avec une décoration overline et texte en bleue claire au survole des liens
     .container-texte {
         padding-left: 20px;
         border-radius: 0 0 30px 30px;
+        display: flex;
+        height: 10%;
+        align-items: center;
     }
     /**
     /*Ici on s'occupe de la partie footer de la page*/

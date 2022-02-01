@@ -291,9 +291,8 @@ Ici on traite la partie saisie de la partie recherche*/
         flex-direction: column;
         height: auto;
     }
-    .container-texte h4 {
-        margin: 0;
-        margin-top: 2%;
+    .container-texte {
+        height: 30%;
     }
     .container-activites-informations {
         width: 100%;
@@ -311,7 +310,7 @@ Ici on traite la partie saisie de la partie recherche*/
         margin: 30px 0 30px 0;
     }
     .container-image {
-        height: 80%;
+        height: 70%;
         border-radius: 30px 30px 0 0;
     }
     /***
