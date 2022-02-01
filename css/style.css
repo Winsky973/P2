@@ -36,7 +36,6 @@ avec une décoration overline et texte en bleue claire au survole des liens
     }
     
     .navigation-img {
-        max-width: auto;
         height: auto;
         align-self: center;
     }
@@ -334,6 +333,11 @@ avec une décoration overline et texte en bleue claire au survole des liens
         width: 30%;
         height: 100%;
         border-radius: 30px 0 0 30px;
+    }
+    
+    .image-aside {
+        width: 100%;
+        height: 60%;
     }
     /*Ici on place toutes les images*/
     

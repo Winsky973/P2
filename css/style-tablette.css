@@ -24,10 +24,6 @@ a {
     .page-header {
         margin: 20px 20px 0;
     }
-    .navigation-img {
-        max-width: auto;
-        height: auto;
-    }
     .navigation-img img {
         width: 50%;
     }

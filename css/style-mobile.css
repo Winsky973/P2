@@ -64,7 +64,7 @@ C'est le CSS pour les telephone mobile
     /*Ici nous traitons la partie formulaire dans son intégralité
 Ici on traite la partie saisie de la partie recherche*/
     .page-form-recherche {
-        padding: none;
+        padding: 0;
         margin-top: 0;
         width: 85%;
     }
