@@ -18,17 +18,15 @@ C'est le CSS pour les telephone mobile
         max-width: 100%;
         height: auto;
     }
-    .navigation-img img {
-        justify-content: center;
-        width: 70%
+    .navigation-img {
+        display: flex;
+        justify-content: end;
+        margin-bottom: 10px;
+        margin-left: -10px;
     }
     .navigation-box {
         display: flex;
         flex-direction: column;
-    }
-    .navigation-logo {
-        display: flex;
-        justify-content: center;
     }
     .navigation-liste {
         padding: 0;
@@ -262,6 +260,10 @@ Ici on traite la partie saisie de la partie recherche*/
         height: 100%;
         border-bottom-left-radius: 30px;
         border-top-left-radius: 30px;
+    }
+    .image-aside {
+        width: 100%;
+        height: 60%;
     }
     /*Ici on place toutes les images*/
     .box-informations-aside {
