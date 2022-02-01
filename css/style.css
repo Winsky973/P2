@@ -63,14 +63,14 @@ avec une décoration overline et texte en bleue claire au survole des liens
     
     .navigation-liste li:nth-of-type(1) a {
         border-top: solid 2px #0065FC;
-        padding-top: 33px;
+        padding-top: 40px;
         color: #0065FC;
     }
     /*Text décoration au survole des liens*/
     
     .navigation-liste a:hover {
         border-top: solid 2px #0065FC;
-        padding-top: 33px;
+        padding-top: 40px;
         color: #0065FC;
     }
     /*Ici nous traitons la partie principale du site web*/
@@ -247,9 +247,10 @@ avec une décoration overline et texte en bleue claire au survole des liens
     /*Ici on design la partie imae de chaque boite*/
     
     .box-informations {
-        height: 80px;
-        border-bottom-left-radius: 20px;
-        border-bottom-right-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 10px;
+        height: 70px;
     }
     
     .box-image {
@@ -260,13 +261,10 @@ avec une décoration overline et texte en bleue claire au survole des liens
     }
     /*Ici on s'occupe de la partie texte des logements titre prix nombre d'étoiles*/
     
-    .box-informations {
-        padding: 0 15px;
-    }
-    
     .box-informations>h4 {
         margin: 0;
-        margin: 10px 0 5px 0;
+        margin: 8px 0 4px 0;
+        font-size: 15px;
     }
     
     .box-informations>p {
@@ -275,8 +273,10 @@ avec une décoration overline et texte en bleue claire au survole des liens
     /*Ici on design la partie etoiles*/
     
     .box-etoiles {
+        display: flex;
         font-size: 12px;
-        margin-top: 3px;
+        height: 100%;
+        align-items: flex-end;
     }
     
     .etoile-bleue {
@@ -360,6 +360,8 @@ avec une décoration overline et texte en bleue claire au survole des liens
     }
     
     .box-informations-aside {
+        display: flex;
+        flex-direction: column;
         width: 70%;
         height: 100%;
         border-top-right-radius: 30px;
@@ -369,15 +371,18 @@ avec une décoration overline et texte en bleue claire au survole des liens
     
     .box-informations-aside>h4 {
         margin-bottom: 0;
+        margin-top: 10px;
     }
     
     .box-informations-aside>p {
         margin-top: 5px;
+        margin-bottom: 5px;
     }
     
     .box-etoiles-aside {
         display: flex;
-        align-items: flex-end;
+        height: 100%;
+        align-items: end;
     }
     /*Ici on s'occupe de toute la partie activités à marseille*/
     
@@ -541,13 +546,23 @@ avec une décoration overline et texte en bleue claire au survole des liens
             flex: 1 0 300px;
             margin: 10px;
             height: 250px;
-            border-radius: 20px;
-            padding: 3px;
-            background-color: white;
-            box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
         }
         .box-aside {
             height: 170px;
+        }
+        .navigation-liste li:nth-of-type(1) a {
+            border-top: solid 2px #0065FC;
+            padding-top: 37px;
+            color: #0065FC;
+        }
+        /*Text décoration au survole des liens*/
+        .navigation-liste a:hover {
+            border-top: solid 2px #0065FC;
+            padding-top: 37px;
+            color: #0065FC;
+        }
+        .box-informations {
+            height: 91px;
         }
     }
     

@@ -153,12 +153,6 @@ a {
     /*On design toute les boites qui contiendront les informations des logements*/
     .box {
         flex: 1 1 40%;
-        margin: 10px;
-        height: 200px;
-        border-radius: 20px;
-        padding: 5px;
-        background-color: white;
-        box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.192);
     }
     /*Ici on design la partie imae de chaque boite*/
     .box-image {
