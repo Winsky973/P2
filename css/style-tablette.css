@@ -222,6 +222,9 @@ a {
         width: 30%;
         height: 100%;
     }
+    .image-aside {
+        height: auto;
+    }
     .container-informations-aside {
         display: flex;
         align-items: center;

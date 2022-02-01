@@ -515,6 +515,9 @@ avec une décoration overline et texte en bleue claire au survole des liens
     }
     
     @media (min-width: 1277px) {
+        body {
+            font-size: 18px;
+        }
         .page-form-recherche {
             padding: 10px;
             width: 60%;
@@ -531,25 +534,37 @@ avec une décoration overline et texte en bleue claire au survole des liens
     }
     
     @media (min-width: 1626px) {
+        body {
+            font-size: 22px;
+        }
         .box {
-            flex: 1 0 260px;
+            flex: 1 0 300px;
             margin: 10px;
-            height: 200px;
+            height: 250px;
             border-radius: 20px;
             padding: 3px;
             background-color: white;
             box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
         }
+        .box-aside {
+            height: 170px;
+        }
     }
     
     @media (min-width: 1899px) {
+        body {
+            font-size: 22px;
+        }
         .box {
-            flex: 1 0 380px;
+            flex: 1 0 400px;
             margin: 10px;
-            height: 200px;
+            height: 260px;
             border-radius: 20px;
             padding: 3px;
             background-color: white;
             box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
+        }
+        .box-aside {
+            height: 170px;
         }
     }
