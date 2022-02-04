@@ -65,7 +65,7 @@ a {
         font-weight: bold;
     }
     .page-form-recherche p {
-        font-weight: 400;
+        margin-right: 30px;
     }
     .fa-map-marker-alt {
         position: relative;
@@ -151,7 +151,7 @@ a {
         padding: 0;
     }
     /*On design toute les boites qui contiendront les informations des logements*/
-    .box {
+    .box-gauche {
         flex: 1 1 40%;
     }
     /*Ici on design la partie imae de chaque boite*/
@@ -186,10 +186,6 @@ a {
         margin: 0;
     }
     /*Ici on design la partie etoiles*/
-    .box-etoiles {
-        font-size: 12px;
-        margin-top: 3px;
-    }
     .etoile-bleue {
         color: #0065FC;
     }
@@ -225,21 +221,6 @@ a {
         margin: 0;
         margin-bottom: 30px;
     }
-    .box-image-aside-1 {
-        object-fit: cover;
-        object-position: center;
-        border-radius: 30px 0 0 30px;
-    }
-    .box-image-aside-2 {
-        object-fit: cover;
-        object-position: center;
-        border-radius: 30px 0 0 30px;
-    }
-    .box-image-aside-3 {
-        object-fit: cover;
-        object-position: center;
-        border-radius: 30px 0 0 30px;
-    }
     .box-informations-aside {
         width: 70%;
         height: 100%;
@@ -247,15 +228,17 @@ a {
         border-bottom-right-radius: 30px;
         padding: 0 10px;
     }
+    .container-box-aside {
+        margin-right: 10px;
+    }
+    .container-box-aside:nth-of-type(3) {
+        margin-right: 0;
+    }
     .box-informations-aside>h4 {
         margin-bottom: 0;
     }
     .box-informations-aside>p {
         margin-top: 5px;
-    }
-    .box-etoiles-aside {
-        display: flex;
-        align-items: flex-end;
     }
     /*Ici on s'occupe de toute la partie activités à marseille*/
     .activites {
@@ -266,10 +249,6 @@ a {
         height: auto;
         display: flex;
         flex-wrap: wrap;
-    }
-    .container-activites-informations {
-        border-radius: 30px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
     }
     .container-activites-informations>a {
         color: black;
@@ -288,8 +267,8 @@ a {
         justify-content: space-between;
     }
     .informations-column {
-        border-radius: 30px;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 20%);
     }
     .informations-column>a {
         color: black;
@@ -320,7 +299,7 @@ a {
     /*Container images et textes**/
     .container-image {
         height: 90%;
-        border-radius: 30px 30px 0 0;
+        border-radius: 20px 20px 0 0;
     }
     .container-image-column {
         height: 80%;

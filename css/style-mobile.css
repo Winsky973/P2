@@ -20,9 +20,11 @@ C'est le CSS pour les telephone mobile
     }
     .navigation-img {
         display: flex;
-        justify-content: end;
+        justify-content: center;
         margin-bottom: 10px;
-        margin-left: -10px;
+    }
+    .navigation-img img {
+        width: 50%;
     }
     .navigation-box {
         display: flex;
@@ -40,6 +42,9 @@ C'est le CSS pour les telephone mobile
         padding-bottom: 10px;
         width: 100%;
         text-align: center;
+    }
+    .navigation-liste a:hover {
+        border-top: none;
     }
     .navigation-liste li:nth-of-type(1) a {
         border-top: none;
@@ -78,18 +83,16 @@ Ici on traite la partie saisie de la partie recherche*/
     }
     form p {
         font-weight: 400;
-        margin: 10px 0 20px 0;
     }
     .form-search {
         display: flex;
         align-content: center;
     }
-    input {
-        font-weight: bold;
-        color: black;
-        border: none;
-        border: solid 1px #F2F2F2;
-        padding: 9px;
+    .label-input {
+        width: 100%;
+    }
+    input[type=search] {
+        width: 100%;
     }
     input:focus {
         outline: none !important;
@@ -120,7 +123,8 @@ Ici on traite la partie saisie de la partie recherche*/
     .form-filtres-container {
         display: flex;
         flex-wrap: wrap;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: flex-start;
         margin-top: 20px;
     }
     .filtre-texte {
@@ -138,11 +142,9 @@ Ici on traite la partie saisie de la partie recherche*/
     }
     /*Ici on s'occupe des icons */
     .filtre-box {
-        border: solid 1px #F2F2F2;
-        border-radius: 50px;
-        font-weight: bold;
-        padding-right: 5%;
+        padding-right: 25px;
         margin-top: 10px;
+        margin-right: 10px;
     }
     .fas-filtre {
         border-radius: 50px;
@@ -190,15 +192,6 @@ Ici on traite la partie saisie de la partie recherche*/
         color: black;
     }
     /*On design toute les boites qui contiendront les informations des logements*/
-    .box {
-        flex: 1 1 100%;
-        margin: 10px;
-        height: 200px;
-        border-radius: 20px;
-        padding: 5px;
-        background-color: white;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-    }
     .box a {
         color: black;
     }
@@ -271,13 +264,13 @@ Ici on traite la partie saisie de la partie recherche*/
         height: 100%;
         border-top-right-radius: 30px;
         border-bottom-right-radius: 30px;
-        padding: 0 30px;
+        padding: 0 20px;
     }
     .box-informations-aside>h4 {
         margin-bottom: 0;
     }
     .box-informations-aside>p {
-        margin-top: 5px;
+        margin-top: 10px;
     }
     .box-etoiles-aside {
         display: flex;
@@ -339,5 +332,10 @@ Ici on traite la partie saisie de la partie recherche*/
     }
     .col-footer h3 a {
         color: black;
+    }
+    @media (max-width: 477px) {
+        .container-logo-info-en-plus {
+            width: 42px;
+        }
     }
 }
