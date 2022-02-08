@@ -45,6 +45,7 @@ C'est le CSS pour les telephone mobile
     }
     .navigation-liste a:hover {
         border-top: none;
+        padding-top: 0;
     }
     .navigation-liste li:nth-of-type(1) a {
         border-top: none;
