@@ -5,6 +5,7 @@
 :root {
     --main-bg-color: #F2F2F2;
     --Blue-color: #0065FC;
+    --Blue-light: #DEEBFF;
 }
 
 body {
@@ -35,7 +36,7 @@ avec une décoration overline et texte en bleue claire au survole des liens
 */
 
 .page {
-    margin: 20px 60px 60px;
+    margin: 30px 60px 60px;
 }
 
 .navigation-img {
@@ -44,7 +45,7 @@ avec une décoration overline et texte en bleue claire au survole des liens
 }
 
 .navigation-img img {
-    width: 70%;
+    width: 40%;
 }
 
 .navigation-box {
@@ -67,18 +68,18 @@ avec une décoration overline et texte en bleue claire au survole des liens
 }
 
 .navigation-liste li:nth-of-type(1) a {
-    border-top: solid 2px #0065FC;
-    padding-top: 40px;
-    color: #0065FC;
+    border-top: solid 2px var(--Blue-color);
+    padding-top: 45px;
+    color: var(--Blue-color);
 }
 
 
 /*Text décoration au survole des liens*/
 
 .navigation-liste a:hover {
-    border-top: solid 2px #0065FC;
-    padding-top: 40px;
-    color: #0065FC;
+    border-top: solid 2px var(--Blue-color);
+    padding-top: 45px;
+    color: var(--Blue-color);
 }
 
 
@@ -106,12 +107,15 @@ form h1 {
 }
 
 form p {
-    font-weight: 400;
+    font-size: 15px;
+}
+
+.form-search {
+    display: flex;
 }
 
 .fa-map-marker-alt {
-    border: solid 1px #F2F2F2;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     border-right: none;
     padding: 12px 20px;
     border-top-left-radius: 15px;
@@ -125,20 +129,20 @@ input[type=search] {
     font-weight: bold;
     color: black;
     border: none;
-    border: solid 1px #F2F2F2;
+    border: solid 1px var(--main-bg-color);
     padding: 11px 10px 10px;
 }
 
 input[type=search]:focus {
     outline: none !important;
-    border-color: #719ECE;
+    border-color: var(--Blue-light);
 }
 
 
 /*Ici on design le bouton de recherche*/
 
 .btn-submit-mobile {
-    background: #0065FC;
+    background: var(--Blue-color);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     border: none;
@@ -152,7 +156,7 @@ input[type=search]:focus {
 }
 
 .btn-recherche {
-    background: #0065FC;
+    background: var(--Blue-color);
     cursor: pointer;
     border-radius: 15px;
 }
@@ -174,7 +178,7 @@ input[type=search]:focus {
 }
 
 .filtre-box {
-    border: solid 1px #F2F2F2;
+    border: solid 2px #F2F2F2;
     border-radius: 50px;
     font-weight: bold;
     padding-right: 2%;
@@ -210,7 +214,7 @@ input[type=search]:focus {
 .container-logo-info-en-plus {
     width: 31px;
     height: 30px;
-    border: solid 2px #F2F2F2;
+    border: solid 2px var(--main-bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,7 +229,7 @@ input[type=search]:focus {
 }
 
 .fa-info {
-    color: #0065FC;
+    color: var(--Blue-color);
     font-size: 12px;
 }
 
@@ -245,7 +249,7 @@ input[type=search]:focus {
 
 .container-gauche {
     flex: 70;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     border-radius: 30px;
 }
 
@@ -299,7 +303,7 @@ input[type=search]:focus {
 .box-informations {
     display: flex;
     flex-direction: column;
-    padding: 0 6px;
+    padding: 0 5px;
     height: 70px;
 }
 
@@ -334,7 +338,7 @@ input[type=search]:focus {
 }
 
 .etoile-bleue {
-    color: #0065FC;
+    color: var(--Blue-color);
 }
 
 .etoile-gris {
@@ -347,7 +351,7 @@ input[type=search]:focus {
 .container-droit {
     flex: 30;
     margin-left: 30px;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     padding: 0 20px;
     border-radius: 30px;
 }
@@ -511,7 +515,7 @@ input[type=search]:focus {
     /*Ici on s'occupe de la partie footer de la page*/
 
 .page-footer {
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     width: 100%;
 }
 
@@ -585,15 +589,11 @@ input[type=search]:focus {
         height: 160px;
     }
     .navigation-liste li:nth-of-type(1) a {
-        border-top: solid 2px #0065FC;
-        padding-top: 37px;
-        color: #0065FC;
+        padding-top: 45px;
     }
     /*Text décoration au survole des liens*/
     .navigation-liste a:hover {
-        border-top: solid 2px #0065FC;
-        padding-top: 37px;
-        color: #0065FC;
+        padding-top: 45px;
     }
     .container-activites-flex {
         height: 600px;

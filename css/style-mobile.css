@@ -5,14 +5,14 @@
 C'est le CSS pour les telephone mobile
 */
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     /**Ici nous nous concentrons sur la  partie header en général 
     Avec une marge top, droit et gauche a 50px
     un display en inline flex
     avec une décoration overline et texte en bleue claire au survole des liens
     */
     .page-header {
-        margin: 20px 0;
+        margin: 10px 0;
     }
     img {
         max-width: 100%;
@@ -142,9 +142,9 @@ Ici on traite la partie saisie de la partie recherche*/
     }
     /*Ici on s'occupe des icons */
     .filtre-box {
-        padding-right: 25px;
+        padding-right: 10px;
         margin-top: 10px;
-        margin-right: 10px;
+        margin-right: 15px;
     }
     .fas-filtre {
         border-radius: 50px;
@@ -179,14 +179,14 @@ Ici on traite la partie saisie de la partie recherche*/
         margin-bottom: 10px;
     }
     .container-gauche>h3 {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     /*Ici on construit notre container des containers de logements*/
     .container-informations {
         display: flex;
-        flex-wrap: wrap;
         padding: 0;
         margin: 0 20px;
+        flex-direction: column;
     }
     h3 a {
         color: black;
@@ -279,6 +279,9 @@ Ici on traite la partie saisie de la partie recherche*/
     /*Ici on s'occupe de toute la partie activités à marseille*/
     .activites {
         margin: 0 30px;
+    }
+    .activites h2 {
+        margin-bottom: 0;
     }
     .container-activites-flex {
         flex-direction: column;

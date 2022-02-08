@@ -10,6 +10,7 @@ avec une décoration overline et texte en bleue claire au survole des liens
 
 body {
     font-family: Raleway, Helvetica, sans-serif;
+    font-size: 18px;
 }
 
 ul,
@@ -20,7 +21,7 @@ a {
     padding: 0;
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .page-header {
         margin: 20px 20px 0;
     }
@@ -43,7 +44,7 @@ a {
     /*Text décoration au survole des liens*/
     .navigation-liste li:nth-of-type(1) a {
         border-top: solid 2px #0065FC;
-        padding-top: 33px;
+        padding-top: 44px;
         color: #0065FC;
     }
     /*Text décoration au survole des liens*/
@@ -66,15 +67,6 @@ a {
     }
     .page-form-recherche p {
         margin-right: 30px;
-    }
-    .fa-map-marker-alt {
-        position: relative;
-        border: solid 1px #F2F2F2;
-        background-color: #F2F2F2;
-        border-right: none;
-        padding: 11.5px 20px;
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
     }
     input {
         font-weight: bold;
@@ -153,6 +145,7 @@ a {
     /*On design toute les boites qui contiendront les informations des logements*/
     .box-gauche {
         flex: 1 1 40%;
+        height: 250px;
     }
     /*Ici on design la partie imae de chaque boite*/
     .box-image {
@@ -197,6 +190,7 @@ a {
         display: flex;
         flex: 200px;
         margin: 0;
+        height: 150px;
     }
     .container-box {
         margin-right: 20px;
@@ -230,6 +224,7 @@ a {
     }
     .container-box-aside {
         margin-right: 10px;
+        flex: 1;
     }
     .container-box-aside:nth-of-type(3) {
         margin-right: 0;
@@ -244,6 +239,7 @@ a {
     .activites {
         margin-top: 60px;
         margin-bottom: 50px;
+        padding: 0 20px;
     }
     .container-activites-flex {
         height: auto;
