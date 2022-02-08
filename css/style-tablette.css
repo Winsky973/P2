@@ -10,7 +10,7 @@ avec une décoration overline et texte en bleue claire au survole des liens
 
 body {
     font-family: Raleway, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 100%;
 }
 
 ul,
@@ -21,7 +21,7 @@ a {
     padding: 0;
 }
 
-@media (min-width: 768px) and (max-width: 992px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .page-header {
         margin: 20px 20px 0;
     }
