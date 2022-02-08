@@ -98,7 +98,7 @@ avec une décoration overline et texte en bleue claire au survole des liens
 
 .page-form-recherche {
     padding: 10px;
-    width: 75%;
+    width: 85%;
 }
 
 form h1 {
@@ -164,13 +164,14 @@ input[type=search]:focus {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     margin-top: 30px;
 }
 
 .filtre-texte {
     font-weight: bold;
     color: black;
+    margin-right: 20px;
 }
 
 .filtre-box {
@@ -178,6 +179,7 @@ input[type=search]:focus {
     border-radius: 50px;
     font-weight: bold;
     padding-right: 2%;
+    margin-right: 10px;
 }
 
 .fas-filtre {
@@ -247,12 +249,12 @@ input[type=search]:focus {
     flex: 70;
     background-color: var(--main-bg-color);
     border-radius: 30px;
+    padding: 0 20px;
 }
 
 .container-gauche>h2 {
     margin-top: 50px;
     margin-bottom: 25px;
-    padding-left: 30PX;
 }
 
 .container-gauche>h3 {
@@ -270,7 +272,6 @@ input[type=search]:focus {
 .container-informations {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 20px;
 }
 
 
@@ -284,7 +285,8 @@ input[type=search]:focus {
 
 .box-gauche {
     flex: 1 0 160px;
-    margin: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     height: 200px;
     padding: 5px;
 }
@@ -373,7 +375,7 @@ input[type=search]:focus {
 
 .box-aside {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     height: 135px;
     padding: 5px;
 }
@@ -536,7 +538,7 @@ input[type=search]:focus {
     color: black;
 }
 
-@media (min-width: 1216px) {
+@media (min-width: 1142px) {
     .page-form-recherche {
         padding: 10px;
         width: 70%;
@@ -546,7 +548,7 @@ input[type=search]:focus {
     }
 }
 
-@media (min-width: 1445px) {
+@media (min-width: 1370px) {
     body {
         font-size: 18px;
     }
