@@ -95,13 +95,10 @@ Ici on traite la partie saisie de la partie recherche*/
     input[type=search] {
         width: 100%;
     }
-    input:focus {
+    input[type=search]:focus {
         outline: none !important;
         border-color: #719ECE;
         border-left: none;
-    }
-    input[type=submit] {
-        visibility: hidden;
     }
     /*Dans cette partie la on gère la partie bouton submit de la recherche*/
     .btn-submit-mobile {
@@ -173,20 +170,22 @@ Ici on traite la partie saisie de la partie recherche*/
         border-radius: 30px;
         width: 100%;
     }
+    .box-gauche {
+        margin-bottom: 20px;
+        height: 200px;
+        margin-right: 0px;
+    }
     .container-gauche>h2 {
         padding: 0;
-        margin-left: 30px;
-        margin-top: 50px;
-        margin-bottom: 10px;
     }
     .container-gauche>h3 {
+        padding-left: 0;
         margin-bottom: 30px;
     }
     /*Ici on construit notre container des containers de logements*/
     .container-informations {
         display: flex;
         padding: 0;
-        margin: 0 20px;
         flex-direction: column;
     }
     h3 a {
@@ -279,7 +278,7 @@ Ici on traite la partie saisie de la partie recherche*/
     }
     /*Ici on s'occupe de toute la partie activités à marseille*/
     .activites {
-        margin: 0 30px;
+        margin: 0 20px;
     }
     .activites h2 {
         margin-bottom: 0;
