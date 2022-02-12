@@ -163,7 +163,6 @@ input[type=search]:focus {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    /*justify-content: space-between;*/
     margin-top: 30px;
 }
 
@@ -201,9 +200,6 @@ input[type=search]:focus {
     cursor: pointer;
     color: hsla(216, 100%, 49%, 0.377);
 }
-
-
-/*Ici on s'occupe des icons */
 
 
 /*Ici ce sont les infos en plus*/
