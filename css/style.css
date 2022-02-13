@@ -263,7 +263,6 @@ input[type=search]:focus {
 /*Gestion du h3 du container de gauche*/
 
 .container-gauche>h3 {
-    padding-left: 30PX;
     margin-bottom: 50px;
 }
 
