@@ -67,18 +67,12 @@ avec une décoration overline et texte en bleue claire au survole des liens
     color: black;
 }
 
-.navigation-liste li:nth-of-type(1) a {
-    border-top: solid 2px var(--Blue-color);
-    padding-top: 45px;
-    color: var(--Blue-color);
-}
-
 
 /*Text décoration au survole des liens*/
 
 .navigation-liste a:hover {
     border-top: solid 2px var(--Blue-color);
-    padding-top: 45px;
+    padding-top: 47px;
     color: var(--Blue-color);
 }
 
@@ -581,13 +575,7 @@ aside .box .box-informations {
     .box-aside {
         height: 160px;
     }
-    .navigation-liste li:nth-of-type(1) a {
-        padding-top: 45px;
-    }
     /*Text décoration au survole des liens*/
-    .navigation-liste a:hover {
-        padding-top: 45px;
-    }
     .container-activites-flex {
         height: 600px;
         display: flex;
